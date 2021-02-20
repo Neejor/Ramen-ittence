@@ -2,7 +2,7 @@ import React from "react";
 
 function banner() {
     return (
-        <div>
+        <section id="home">
             {/* <img id="banner" src = "/Banner.jpg" alt="banner"></img> */}
             <div id="banner">
                 <img src="/Banner.jpg" alt="banner" />
@@ -11,7 +11,7 @@ function banner() {
                     <h2>RAMEN</h2>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -13,3 +13,9 @@
 // };
 
 // window.addEventListener("scroll", myScrollFunc);
+
+const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+	speed: 800
+});
+
+console.log(scroll);

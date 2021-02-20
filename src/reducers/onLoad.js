@@ -2,7 +2,7 @@ const onLoad = (state = {dish: []},action) => {
     switch(action.type) {
         case "onLoad":
             return {
-                data: action.dishes
+                dish: action.dishes
             }
 
         default:

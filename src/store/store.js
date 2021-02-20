@@ -1,4 +1,4 @@
-import allReducers from "../reducers/allReducers"
+import allReducers from "../reducers/allReducers";
 import {createStore, compose, applyMiddleware} from "redux";
 import Axios from "axios";
 
@@ -13,10 +13,8 @@ const setList = (dishes) => {
   
   const List = () => {
       return function(dispatch){
-          console.log("SS");
           Axios.get("http://localhost:4000/dishCatalogueDB/find")
               .then(res => {
-                  console.log(res.data);
                   dispatch(setList(res.data));
               })
               .catch(err => {
